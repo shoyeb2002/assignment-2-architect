@@ -1,0 +1,156 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+.btn-primary{
+    background: #ff900e;
+    padding: 20px 24px;
+    border: none;
+    border-radius: 10px;
+}
+.btn-primary a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+h2{
+    font-size: 45px;
+}
+p{
+    font-size: 18px;
+    color: #727272;
+}
+/* -----header Section styles------ */
+.header{
+    background: rgba(255, 144, 14, 0.1);
+    width: 100%;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+.logo{
+    font-size: 40px;
+    font-weight: 700;
+}
+ul{
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color:#424242 ;
+}
+
+/* header tittle styles */
+.header-tittle{
+    margin-top: 100px;
+    text-align: center;
+}
+.header-tittle h1{
+    font-size: 64px;
+    font-weight: 700;
+}
+.header-tittle p{
+    margin-top: 28px;
+    margin-bottom: 32px;
+}
+.banner{
+    margin-top: 50px;
+   padding-bottom: 50px;
+}
+.banner img{
+    width: 100%;
+}
+
+/* feature section styles */
+.features{
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.feature-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#q-l{
+    color: #727272;
+    font-weight: 500;
+}
+#o-o{
+    color: black;
+    font-weight: 700;
+}
+#fea{
+    color:#ff900e;
+}
+.features-description p{
+    margin-top: 24px;
+    margin-bottom: 23px;
+}
+/* special feature style */
+.special-feature{
+    margin-top: 130px;
+}
+.special-feature h2{
+    border-left: 4px solid #ff900e;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:576px) {
+    /* header responsive */
+   .container{
+    width: 100%;
+
+   }
+   nav{
+    flex-direction: column;
+    gap: 20px;
+   }
+   ul{
+    flex-direction: column;
+    text-align: center;
+   }
+   /* feature responsive */
+   .features{
+    flex-direction: column-reverse;
+    padding-left: 0px;
+    padding-right: 0px;
+   }
+   .feature-img{
+    grid-template-columns: 1fr;
+   }
+   .features-description{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+   }
+
+}
